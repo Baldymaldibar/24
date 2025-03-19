@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="left">
+            <div class="top">
+                <div class="logo">
+                    <img src="Logo.svg" class="logo-img">
+                    <h2>GOODFOOD</h2>
+                </div>
+            </div>
+            <nav class="menu">
+                <h4 class="menu-muted-text">MENU</h4>
+                <a href="#!" class="menu__link active">
+                    <span class="material-icons-round">leaderboard</span>
+                    <h3 class="menu-title">Dashboard</h3>
+                </a>
+                <a href="#!" class="menu__link">
+                    <span class="material-icons-sharp"><span class="material-icons-round">shopping_cart</span></span>
+                    <h3 class="menu-title">Food Order</h3>
+                </a>
+                <a href="#!" class="menu__link">
+                    <span class="material-icons-round">article</span>
+                    <h3 class="menu-title">Manage Menu</h3>
+                </a>
+                <a href="#!" class="menu__link">
+                    <span class="material-icons-round">feedback</span>
+                    <h3 class="menu-title">Custom Review</h3>
+                </a>
+                <h4 class="menu-muted-text">OTHERS</h4>
+                <a href="#!" class="menu__link">
+                    <span class="material-icons-round">settings</span>
+                    <h3 class="menu-title">Settings</h3>
+                </a>
+                <a href="#!" class="menu__link">
+                    <span class="material-icons-round">wallet</span>
+                    <h3 class="menu-title">Payment</h3>
+                </a>
+                <a href="#!" class="menu__link">
+                    <span class="material-icons-round">group</span>
+                    <h3 class="menu-title">Accounts</h3>
+                </a>
+                <a href="#!" class="menu__link">
+                    <span class="material-icons-round">help_outline</span>
+                    <h3 class="menu-title">Help</h3>
+                </a>
+            </nav>
+        </aside>
+        <!-- мэин -->
+        <main>
+            <div class="profile">
+                <img src="photo_2023-12-05_11-51-13.jpg" class="profile-picture">
+                <div class="profile-name">Крутой перец</div>
+                <span class="material-icons-round profile-more">keyboard_arrow_down</span>
+                <span class="material-icons-round notifications">notifications</span>
+            </div>
+
+            <div class="dashboard">
+
+                <div class="title">Dashboard</div>
+
+                <div class="dashboard-container">
+                    <div class="dashboard-revenue">
+                        <div class="view-report-placeholder">
+                            <h3 class="dashboard-muted-text">Revenue</h3>
+                            <button class="view-report">View Report</button>
+                            <!-- <a href="#!" class="view-report">View Report</a> -->
+                        </div>
+                        <p>IDR 7.852.000</p>
+                        <p class="order-difference">
+                            <img src="Arrow Up (1).svg"> <span class="green">2.1%</span> vs last week
+                        </p>
+                        <p class="data-range">Sales from 1-7 Feb, 2025</p>
+                        <div class="chart">
+                            <p>First courses - 20%</p>
+                            <div class="pipe">
+                                <div class="sector1"></div>
+                            </div>
+                            <p>Burgers - 30%</p>
+                            <div class="pipe">
+                                <div class="sector2"></div>
+                            </div>
+                            <p>Lunch boxes - 40%</p>
+                            <div class="pipe">
+                                <div class="sector3"></div>
+                            </div>
+                            <p>Drinks and snacks - 10%</p>
+                            <div class="pipe">
+                                <div class="sector4"></div>
+                            </div>
+                        </div>
+                        <p class="chart-time-limit"><img src="Ellipse 7.png"> Last 7 days</p>
+                    </div>
+
+                    <div class="dashboard-orders">
+
+                        <div class="order-time-block">
+                            <div class="chart-header">
+                                <h2 class="chart-title">Order time</h2>
+                                <a href="#!" class="view-report">View Report</a>
+                            </div>
+                            <p class="data-range">From 1-6 Feb, 2025</p>
+                            <div class="chart-container">
+                                <div class="chart-container-svg">
+                                    <div class="chart-svg">
+                                        <svg width="150" height="150" viewBox="0 0 100 100">
+                                            <circle cx="50" cy="50" r="40" fill="none" stroke="#eee"
+                                                stroke-width="16" />
+                                            <circle class="circle-segment" cx="50" cy="50" r="40" fill="none"
+                                                stroke="var(--dark-blue)" stroke-width="16"
+                                                stroke-dasharray="115.097, 282,74" transform="rotate(-90 50 50)" />
+                                            <circle class="circle-segment" cx="50" cy="50" r="40" fill="none"
+                                                stroke="var(--blue)" stroke-width="16"
+                                                stroke-dasharray="97.4768, 282,74" transform="rotate(54 50 50)" />
+                                            <circle class="circle-segment" cx="50" cy="50" r="40" fill="none"
+                                                stroke="var(--light-purple)" stroke-width="16"
+                                                stroke-dasharray="97.4768, 282,74" transform="rotate(146 50 50)" />
+                                        </svg>
+                                    </div>
+                                    <div class="chart-info">
+                                        <div class="info-box">
+                                            <h3 class="info-title">Afternoon</h3>
+                                            <p class="chart-infobox-item">1pm - 4pm</p>
+                                            <p class="chart-infobox-orders">1.890 orders</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart-percentage">
+                                    <p><img src="Ellipse 17.png"> Afternoon<br><span>40%</span></p>
+                                    <p><img src="Ellipse 7-1.png"> Evening<br><span>32%</span></p>
+                                    <p><img src="Ellipse 7-2.png"> Morning<br><span>28%</span></p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="dashboard-rating">
+                        <h3>Your Rating</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        <img src="Rating.png">
+                    </div>
+
+                    <div class="dashboard-mof">
+                        <h3>Most Ordered Food</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        <div class="dashboard-mof-section">
+                            <p><img src="bluda/image 3.png" class="food-img">
+                                Fresh Salad Bowl <span>IDR 45.000</span></p>
+                        </div>
+                        <div class="dashboard-mof-section">
+                            <p><img src="bluda/image 4.png" class="food-img">
+                                Chicken Noodles <span>IDR 75.000</span></p>
+                        </div>
+                        <div class="dashboard-mof-section">
+                            <p><img src="bluda/image 5.png" class="food-img">
+                                Smoothie Fruits <span>IDR 45.000</span></p>
+                        </div>
+                        <div class="dashboard-mof-section">
+                            <p><img src="bluda/image 6.png" class="food-img">
+                                Hot Chicken Wings <span>IDR 45.000</span></p>
+                        </div>
+                    </div>
+
+                    <!-- ----------------------------------------------- -->
+                    <div class="dashboard-order">
+
+                        <div class="view-report-placeholder">
+                            <h3 class="dashboard-muted-text">Revenue</h3>
+                            <button class="view-report">View Report</button>
+                            <!-- <a href="#!" class="view-report">View Report</a> -->
+                        </div>
+                        <p>IDR 7.852.000</p>
+                        <p class="order-difference">
+                            <img src="Arrow Up (1).svg"> <span class="green">2.1%</span> vs last week
+                        </p>
+                        <p class="data-range">Sales from 1-7 Feb, 2025</p>
+                        <div class="dashboard-order-chart">
+                            <div class="chart__wrap">
+                                <div class="row">
+
+                                    <div class="td">
+                                        <div class="column">
+                                            <div class="rate">
+                                            </div>
+                                            <span class="col-bg"></span>
+                                        </div>
+                                    </div>
+                                    <div class="td">
+                                        <div class="column">
+                                            <div class="rate">
+                                            </div>
+                                            <span class="col-bg"></span>
+                                        </div>
+                                    </div>
+                                    <div class="td">
+                                        <div class="column">
+                                            <div class="rate">
+                                            </div>
+                                            <span class="col-bg"></span>
+                                        </div>
+                                    </div>
+                                    <div class="td">
+                                        <div class="column">
+                                            <div class="rate">
+                                            </div>
+                                            <span class="col-bg"></span>
+                                        </div>
+                                    </div>
+                                    <div class="td">
+                                        <div class="column">
+                                            <div class="rate">
+                                            </div>
+                                            <span class="col-bg"></span>
+                                        </div>
+                                    </div>
+                                    <div class="td">
+                                        <div class="column">
+                                            <div class="rate">
+                                            </div>
+                                            <span class="col-bg"></span>
+                                        </div>
+                                    </div>
+                                    <div class="td">
+                                        <div class="column">
+                                            <div class="rate">
+                                            </div>
+                                            <span class="col-bg"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row second">
+                                    <div class="td">
+                                        <span class="col-blue one"></span>
+                                    </div>
+                                    <div class="td">
+                                        <span class="col-blue two"></span>
+                                    </div>
+                                    <div class="td">
+                                        <span class="col-blue three"></span>
+                                    </div>
+                                    <div class="td">
+                                        <span class="col-blue four"></span>
+                                    </div>
+                                    <div class="td">
+                                        <span class="col-blue five"></span>
+                                    </div>
+                                    <div class="td">
+                                        <span class="col-blue six"></span>
+                                    </div>
+                                    <div class="td">
+                                        <span class="col-blue seven"></span>
+                                    </div>
+                                </div>
+                                <div class="row year">
+                                    <div class="td">01</div>
+                                    <div class="td">02</div>
+                                    <div class="td">03</div>
+                                    <div class="td">04</div>
+                                    <div class="td">05</div>
+                                    <div class="td">06</div>
+                                    <div class="td">07</div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="chart-time-limit"><img src="Ellipse 7.png"> Last 7 days</p>
+                        <p class="chart-time-limit"><img src="Ellipse 8.png"> Last 7 days</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+    </div>
+    </main>
+    </div>
+</body>
+
+</html>
